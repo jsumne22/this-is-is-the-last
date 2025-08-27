@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slope-Intercept Practice</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2em auto; }
+    .plot { border: 1px solid #ccc; margin: 1em 0; }
+    label { display: block; margin-top: 1em; }
+    input[type="number"] { width: 4em; }
+    .result { margin-top: 1em; font-weight: bold; }
+    button { margin-top: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Slope-Intercept Practice</h1>
+  <div id="problem"></div>
+  <canvas id="plot" class="plot" width="300" height="300"></canvas>
+  <form id="answerForm">
+    <label>
+      What is the slope (m)?
+      <input type="number" step="any" id="slope" required>
+    </label>
+    <label>
+      What is the y-intercept (b)?
+      <input type="number" step="any" id="intercept" required>
+    </label>
+    <button type="submit">Check Answer</button>
+  </form>
+  <div class="result" id="result"></div>
+  <button id="newProblem" style="display:none">Try a New Problem</button>
+  <script src="slope.js"></script>
+</body>
+</html>
